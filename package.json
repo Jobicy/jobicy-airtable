@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "sync": "node src/index.js",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/index.js && node --check src/sync.js && node --check src/airtable.js"
+  },
+  "dependencies": {
+    "@jobicy/jobs": "https://codeload.github.com/Jobicy/jobicy-js/tar.gz/218c4d7665ad4734fcd5b48b3dffdf1c227ad63b"
+  },
+  "name": "jobicy-airtable",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Synchronize remote jobs into Airtable with ID-based updates and listing status checks using the Jobicy API.",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jobicy/jobicy-airtable.git"
+  }
+}
